@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     
     //todo - add passing the delegate
-    func addTextView(_ view:UIView) {
+    @objc func addTextView(_ view:UIView) {
 
         let sampleTextView = UITextView(frame: CGRect(x: 20, y: 100, width: 290, height: 300));
         
