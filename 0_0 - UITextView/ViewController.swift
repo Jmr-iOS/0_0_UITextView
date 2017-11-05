@@ -14,20 +14,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.translatesAutoresizingMaskIntoConstraints = false;
         
         self.addTextView(self.view);
-        self.addDelegate(
+        //!!!self.addDelegate(
         
         return;
     }
 
     
     //todo - add passing the delegate
-    func addTextView(view:UIView) {
+    func addTextView(_ view:UIView) {
 
-        let sampleTextView = UITextView(frame: CGRectMake(20, 100, 290, 300));
+        let sampleTextView = UITextView(frame: CGRect(x: 20, y: 100, width: 290, height: 300));
         
-        sampleTextView.textAlignment = .Left;
+        sampleTextView.textAlignment = .left;
         
-        sampleTextView.backgroundColor = UIColor.purpleColor();
+        sampleTextView.backgroundColor = UIColor.purple;
         
         
         sampleTextView.text = "Enter the TextView text here \n many, many lines of it!";
@@ -36,10 +36,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             sampleTextView.text = sampleTextView.text +  String("line[\(i)] - And then there is a lot of text next to it...! :)\n");
         }
         
-        sampleTextView.font = UIFont.systemFontOfSize(11);
-        sampleTextView.autocorrectionType = UITextAutocorrectionType.No;
-        sampleTextView.keyboardType = UIKeyboardType.Default;
-        sampleTextView.returnKeyType = UIReturnKeyType.Done;
+        sampleTextView.font = UIFont.systemFont(ofSize: 11);
+        sampleTextView.autocorrectionType = UITextAutocorrectionType.no;
+        sampleTextView.keyboardType = UIKeyboardType.default;
+        sampleTextView.returnKeyType = UIReturnKeyType.done;
         
 //?     sampleTextView.clearButtonMode = UITextFieldViewMode.WhileEditing;
 //?     sampleTextView.contentVerticalAlignment = UIControlContentVerticalAlignment.Center;
@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addSubview(sampleTextView);
         
-        sampleTextView.backgroundColor = UIColor.purpleColor();
+        sampleTextView.backgroundColor = UIColor.purple;
         
         return;
     }
@@ -57,35 +57,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //Delegate Methods
     // MARK:- ---> Textfield Delegates
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         print("TextField did begin editing method called")
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         print("TextField did end editing method called")
     }
     
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("TextField should begin editing method called")
         return true;
     }
     
-    func textFieldShouldClear(textField: UITextField) -> Bool {
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
         print("TextField should clear method called")
         return true;
     }
     
-    func textFieldShouldEndEditing(textField: UITextField) -> Bool {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         print("TextField should snd editing method called")
         return true;
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         print("While entering the characters this method gets called")
         return true;
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("TextField should return method called")
         textField.resignFirstResponder();
         return true;
