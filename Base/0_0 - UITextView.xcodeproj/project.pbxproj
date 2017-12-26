@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D0F2AC661BF6E61E001F6A07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F2AC651BF6E61E001F6A07 /* AppDelegate.swift */; };
-		D0F2AC681BF6E61E001F6A07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F2AC671BF6E61E001F6A07 /* ViewController.swift */; };
-		D0F2AC6D1BF6E61E001F6A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F2AC6C1BF6E61E001F6A07 /* Assets.xcassets */; };
+		D0319FE11FF2D3F200F200DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0319FDF1FF2D3F200F200DD /* ViewController.swift */; };
+		D0319FE21FF2D3F200F200DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0319FE01FF2D3F200F200DD /* AppDelegate.swift */; };
+		D0319FE71FF2D3FB00F200DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0319FE41FF2D3FB00F200DD /* Assets.xcassets */; };
+		D0319FE81FF2D3FB00F200DD /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0319FE51FF2D3FB00F200DD /* Base.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0319FDF1FF2D3F200F200DD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		D0319FE01FF2D3F200F200DD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		D0319FE31FF2D3FB00F200DD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0319FE41FF2D3FB00F200DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0319FE51FF2D3FB00F200DD /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		D0F2AC621BF6E61E001F6A07 /* 0_0 - UITextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "0_0 - UITextView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0F2AC651BF6E61E001F6A07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0F2AC671BF6E61E001F6A07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0F2AC6C1BF6E61E001F6A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0F2AC711BF6E61E001F6A07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,11 +33,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0319FDE1FF2D3E600F200DD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D0319FE41FF2D3FB00F200DD /* Assets.xcassets */,
+				D0319FE51FF2D3FB00F200DD /* Base.lproj */,
+				D0319FE31FF2D3FB00F200DD /* Info.plist */,
+				D0F2AC631BF6E61E001F6A07 /* Products */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		D0F2AC591BF6E61E001F6A07 = {
 			isa = PBXGroup;
 			children = (
-				D0F2AC641BF6E61E001F6A07 /* 0_0 - UITextView */,
-				D0F2AC631BF6E61E001F6A07 /* Products */,
+				D0319FDE1FF2D3E600F200DD /* Base */,
+				D0319FE01FF2D3F200F200DD /* AppDelegate.swift */,
+				D0319FDF1FF2D3F200F200DD /* ViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,17 +59,6 @@
 				D0F2AC621BF6E61E001F6A07 /* 0_0 - UITextView.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D0F2AC641BF6E61E001F6A07 /* 0_0 - UITextView */ = {
-			isa = PBXGroup;
-			children = (
-				D0F2AC651BF6E61E001F6A07 /* AppDelegate.swift */,
-				D0F2AC671BF6E61E001F6A07 /* ViewController.swift */,
-				D0F2AC6C1BF6E61E001F6A07 /* Assets.xcassets */,
-				D0F2AC711BF6E61E001F6A07 /* Info.plist */,
-			);
-			path = "0_0 - UITextView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +94,7 @@
 					D0F2AC611BF6E61E001F6A07 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = HRCQBX7PVQ;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -118,7 +121,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F2AC6D1BF6E61E001F6A07 /* Assets.xcassets in Resources */,
+				D0319FE71FF2D3FB00F200DD /* Assets.xcassets in Resources */,
+				D0319FE81FF2D3FB00F200DD /* Base.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +133,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F2AC681BF6E61E001F6A07 /* ViewController.swift in Sources */,
-				D0F2AC661BF6E61E001F6A07 /* AppDelegate.swift in Sources */,
+				D0319FE21FF2D3F200F200DD /* AppDelegate.swift in Sources */,
+				D0319FE11FF2D3F200F200DD /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +185,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -227,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -239,11 +243,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HRCQBX7PVQ;
-				INFOPLIST_FILE = "0_0 - UITextView/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.--1---UITextView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -252,8 +258,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HRCQBX7PVQ;
-				INFOPLIST_FILE = "0_0 - UITextView/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaostech.--1---UITextView";
 				PRODUCT_NAME = "$(TARGET_NAME)";

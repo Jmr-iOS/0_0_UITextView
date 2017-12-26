@@ -38,12 +38,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         sampleTextView.font = UIFont.systemFont(ofSize: 11);
         sampleTextView.autocorrectionType = UITextAutocorrectionType.no;
-        sampleTextView.keyboardType = UIKeyboardType.default;
+        sampleTextView.keyboardType  = UIKeyboardType.default;
         sampleTextView.returnKeyType = UIReturnKeyType.done;
-        
-//?     sampleTextView.clearButtonMode = UITextFieldViewMode.WhileEditing;
-//?     sampleTextView.contentVerticalAlignment = UIControlContentVerticalAlignment.Center;
-//?     sampleTextView.delegate = self;
+        sampleTextView.isEditable    = true;                                    /* set to false to disable                          */
+        sampleTextView.isSelectable  = true;
         
         sampleTextView.translatesAutoresizingMaskIntoConstraints = true;
         
