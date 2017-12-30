@@ -30,24 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true;
     }
 
-    func applicationWillResignActive(_ application: UIApplication) {
-        return;
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        return;
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        return;
-    }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        return;
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        return;
-    }
+    func applicationWillResignActive(_ application: UIApplication)    { return; }
+    func applicationDidEnterBackground(_ application: UIApplication)  { return; }
+    func applicationWillEnterForeground(_ application: UIApplication) { return; }
+    func applicationDidBecomeActive(_ application: UIApplication)     { return; }
+    func applicationWillTerminate(_ application: UIApplication)       { return; }
 }
 

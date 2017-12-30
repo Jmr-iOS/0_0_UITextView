@@ -1,9 +1,13 @@
 //
 //  ViewController.swift
 //  0_1 - UITextView
+// @open    set delegate with response
+// @open    file & fcn headers
+// @open    project layout
+// @open    correct print() syntax
 //
-
 import UIKit
+
 
 class ViewController: UIViewController, UITextFieldDelegate {
  
@@ -14,14 +18,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.translatesAutoresizingMaskIntoConstraints = false;
         
         self.addTextView(self.view);
-        //!!!self.addDelegate(
         
         return;
     }
 
     
     //todo - add passing the delegate
-    @objc func addTextView(_ view:UIView) {
+    func addTextView(_ view:UIView) {
 
         let sampleTextView = UITextView(frame: CGRect(x: 20, y: 100, width: 290, height: 300));
         
@@ -40,11 +43,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         sampleTextView.autocorrectionType = UITextAutocorrectionType.no;
         sampleTextView.keyboardType  = UIKeyboardType.default;
         sampleTextView.returnKeyType = UIReturnKeyType.done;
-        sampleTextView.isEditable    = true;                                    /* set to false to disable                          */
-        sampleTextView.isSelectable  = true;
+        sampleTextView.isEditable    = false;                                   /* user text editing                                */
+        sampleTextView.isSelectable  = false;                                   /* user can select                                  */
+        sampleTextView.isScrollEnabled = false;                                 /* user can scroll                                  */
         
         sampleTextView.translatesAutoresizingMaskIntoConstraints = true;
-        
         view.addSubview(sampleTextView);
         
         sampleTextView.backgroundColor = UIColor.purple;
@@ -54,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     //Delegate Methods
-    // MARK:- ---> Textfield Delegates
+// MARK:- ---> Textfield Delegates
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("TextField did begin editing method called")
     }
